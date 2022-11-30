@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/3d47114245.js"
+      crossorigin="anonymous"></script>
+    <title>Linked List</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand text-light" href="#">
+          <span>
+            <img
+              id="logo"
+              src="./assets/logo.png"
+              alt="linked list logo"
+              width="100px"
+          /></span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="#"
+                >Item 1</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Item 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light">Item 3</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <div class="container">
+                <a class="user_identity nav-link text-light">
+                  <span id="user_photo"
+                    ><i class="bi bi-building-fill-gear"></i
+                  ></span>
+                  <span id="user_name">Company ABC</span>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">
+                <span class=""><i class="bi bi-person-circle"></i></span> Sign
+                up
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">
+                <span class=""><i class="bi bi-box-arrow-in-right"></i></span>
+                Log in</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br />
+
+    <div class="container jumbotron-container">
+      <div class="row">
+        <div class="col-12">
+          <h1>
+            <span><img src="./assets/linked.png" alt="" width="25px" /></span>
+            Linked List
+            <span><img src="./assets/linked.png" alt="" width="25px" /></span>
+          </h1>
+          <h3>
+            Unleash your dreams
+            <span id="rocket-animation"
+              ><i class="bi bi-rocket-takeoff"></i
+            ></span>
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- testing start -->
+
+    <!-- testing end -->
+
+    <div class="container search-container">
+      <div class="row">
+        <!-- item1 -->
+        <div class="col-lg-4 col-md-6 col-4">
+          <!-- <input type="text" placeholder="skills, language..."> -->
+          <link
+            rel="stylesheet"
+            href="https://unpkg.com/@jarstone/dselect/dist/css/dselect.css" />
+          <script src="https://unpkg.com/@jarstone/dselect/dist/js/dselect.js"></script>
+          <select class="form-select" id="dselect-example">
+            <option value="null" class="default-select">Select..</option>
+            <option value="Item1">Item1</option>
+            <option value="Item2">Item2</option>
+            <option value="Item3">Item3</option>
+            <option value="Item3">Item4</option>
+            <option value="Item3">Item5</option>
+          </select>
+        </div>
+        <!-- item2 -->
+        <!-- <div class="col-lg-2 col-md-3 col-6">
+          <input type="text" placeholder="Salaries expectation..." />
+        </div> -->
+        <!-- item3 -->
+        <div class="col-lg-8 col-md-6 col-8">
+          <div class="wrapper">
+            <div class="search-input">
+              <a href="" target="_blank" hidden></a>
+              <input
+                type="text"
+                placeholder="Job title, keywords, location, company..." />
+              <div class="autocom-box">
+                <!-- insert list by js -->
+              </div>
+              <div class="icon"><i class="fas fa-search"></i></div>
+            </div>
+          </div>
+        </div>
+        <!-- item3 -->
+        <div class="col-3"></div>
+      </div>
+    </div>
+
+    <!-- result counter -->
+
+    <div class="container text-end">
+      <p>
+        <span>1</span>
+        of
+        <span>30</span>
+        pages..
+      </p>
+    </div>
+
+    <!-- search result -->
+    <span class="select"></span>
+
+    <div class="container search-result-container">
+      <!-- demo id1 start -->
+      <div class="container search-result" id="">
+        <div class="row">
+          <div class="col-lg-8 d-flex align-items-center search-result-left">
+            <div class="search-result-company-logo-container" id=""></div>
+            <div class="search-result-job-info-container">
+              <a class="search-result-job-name" href=""
+                ><h3 class="search-result-job-name">
+                  Full stack web developer
+                </h3></a
+              >
+
+              <div class="search-result-company-name-and-extra-icons">
+                <h6 class="search-result-company-name">Company ABC</h6>
+                <span
+                  ><a href=""><i class="bi bi-share extra-icons"></i></a
+                  ><a href=""><i class="bi bi-save extra-icons"></i></a
+                ></span>
+              </div>
+
+              <div class="search-result-job-post-time-and-salary">
+                <h6>$99,999-$999,999</h6>
+                <h6 class="search-result-job-post-time">updated 1 day ago..</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 text-center search-result-skills-container">
+            <div class="programming"><span>Javascript</span></div>
+            <div class="programming"><span>CSS,html</span></div>
+            <div class="programming"><span>Python</span></div>
+            <div class="programming"><span>react.js</span></div>
+          </div>
+
+          <div class="col-lg-2 search-result-button-container">
+            <div class="col-lg-12 col-6 text-center">
+              <button class="apply" id="">
+                Apply <span><i class="bi bi-arrow-right-square-fill"></i></span>
+              </button>
+            </div>
+            <div class="col-lg-12 col-6 text-center">
+              <button class="more-info">More info..</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- demo id1 end -->
+
+      <!-- demo id1 start -->
+      <div class="container search-result" id="">
+        <div class="row">
+          <div class="col-lg-8 d-flex align-items-center search-result-left">
+            <div class="search-result-company-logo-container" id=""></div>
+            <div class="search-result-job-info-container">
+              <a class="search-result-job-name" href=""
+                ><h3 class="search-result-job-name">
+                  Full stack web developer
+                </h3></a
+              >
+
+              <div class="search-result-company-name-and-extra-icons">
+                <h6 class="search-result-company-name">Company ABC</h6>
+                <span
+                  ><a href=""><i class="bi bi-share extra-icons"></i></a
+                  ><a href=""><i class="bi bi-save extra-icons"></i></a
+                ></span>
+              </div>
+
+              <div class="search-result-job-post-time-and-salary">
+                <h6>$99,999-$999,999</h6>
+                <h6 class="search-result-job-post-time">updated 1 day ago..</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 text-center search-result-skills-container">
+            <div class="programming"><span>Javascript</span></div>
+            <div class="programming"><span>CSS,html</span></div>
+            <div class="programming"><span>Python</span></div>
+            <div class="programming"><span>react.js</span></div>
+          </div>
+
+          <div class="col-lg-2 search-result-button-container">
+            <div class="col-lg-12 col-6 text-center">
+              <button class="apply" id="">
+                Apply <span><i class="bi bi-arrow-right-square-fill"></i></span>
+              </button>
+            </div>
+            <div class="col-lg-12 col-6 text-center">
+              <button class="more-info">More info..</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- demo id1 end -->
+
+       <!-- demo id1 start -->
+       <div class="container search-result" id="">
+        <div class="row">
+          <div class="col-lg-8 d-flex align-items-center search-result-left">
+            <div class="search-result-company-logo-container" id=""></div>
+            <div class="search-result-job-info-container">
+              <a class="search-result-job-name" href=""
+                ><h3 class="search-result-job-name">
+                  Full stack web developer
+                </h3></a
+              >
+
+              <div class="search-result-company-name-and-extra-icons">
+                <h6 class="search-result-company-name">Company ABC</h6>
+                <span
+                  ><a href=""><i class="bi bi-share extra-icons"></i></a
+                  ><a href=""><i class="bi bi-save extra-icons"></i></a
+                ></span>
+              </div>
+
+              <div class="search-result-job-post-time-and-salary">
+                <h6>$99,999-$999,999</h6>
+                <h6 class="search-result-job-post-time">updated 1 day ago..</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 text-center search-result-skills-container">
+            <div class="programming"><span>Javascript</span></div>
+            <div class="programming"><span>CSS,html</span></div>
+            <div class="programming"><span>Python</span></div>
+            <div class="programming"><span>react.js</span></div>
+          </div>
+
+          <div class="col-lg-2 search-result-button-container">
+            <div class="col-lg-12 col-6 text-center">
+              <button class="apply" id="">
+                Apply <span><i class="bi bi-arrow-right-square-fill"></i></span>
+              </button>
+            </div>
+            <div class="col-lg-12 col-6 text-center">
+              <button class="more-info">More info..</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- demo id1 end -->
+
+       <!-- demo id1 start -->
+       <div class="container search-result" id="">
+        <div class="row">
+          <div class="col-lg-8 d-flex align-items-center search-result-left">
+            <div class="search-result-company-logo-container" id=""></div>
+            <div class="search-result-job-info-container">
+              <a class="search-result-job-name" href=""
+                ><h3 class="search-result-job-name">
+                  Full stack web developer
+                </h3></a
+              >
+
+              <div class="search-result-company-name-and-extra-icons">
+                <h6 class="search-result-company-name">Company ABC</h6>
+                <span
+                  ><a href=""><i class="bi bi-share extra-icons"></i></a
+                  ><a href=""><i class="bi bi-save extra-icons"></i></a
+                ></span>
+              </div>
+
+              <div class="search-result-job-post-time-and-salary">
+                <h6>$99,999-$999,999</h6>
+                <h6 class="search-result-job-post-time">updated 1 day ago..</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 text-center search-result-skills-container">
+            <div class="programming"><span>Javascript</span></div>
+            <div class="programming"><span>CSS,html</span></div>
+            <div class="programming"><span>Python</span></div>
+            <div class="programming"><span>react.js</span></div>
+          </div>
+
+          <div class="col-lg-2 search-result-button-container">
+            <div class="col-lg-12 col-6 text-center">
+              <button class="apply" id="">
+                Apply <span><i class="bi bi-arrow-right-square-fill"></i></span>
+              </button>
+            </div>
+            <div class="col-lg-12 col-6 text-center">
+              <button class="more-info">More info..</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- demo id1 end -->
+
+      <div class="container search-result"></div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <script src="./testing.js"></script>
+  </body>
+</html>

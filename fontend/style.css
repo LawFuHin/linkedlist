@@ -1,0 +1,387 @@
+* {
+  font-family: "Merriweather", serif;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+nav {
+  background-color: rgb(2, 5, 51) !important;
+  font-size: 18px !important;
+  border-bottom: 2px solid rgb(255, 255, 84);
+}
+
+.nav-link:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.nav-link {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.user_identity {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.jumbotron-container {
+  background-color: rgb(2, 5, 51);
+  color: white;
+  border-radius: 5px 5px 0px 0px;
+  padding: 50px;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+  background-image: url(./assets/moon.png);
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: bottom 1px right 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron-container {
+    background-size: 200px;
+    background-position: bottom 1px right -20px;
+    /* color: red; */
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .jumbotron-container {
+    background-size: 200px;
+    background-position: bottom 1px right -100px;
+    /* color: green !important; */
+  }
+}
+
+#rocket-animation {
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /* transform: rotate(200deg); */
+  animation: example 10s linear infinite;
+}
+
+@keyframes example {
+  0% {
+    top: 0px;
+    left: 0px;
+    transform: rotate(0deg);
+  }
+
+  30% {
+    color: transparent;
+    top: -100px;
+    left: 100px;
+    transform: rotate(15deg);
+  }
+  71% {
+    color: transparent;
+    top: 50px;
+    left: -50px;
+    transform: rotate(0deg);
+  }
+}
+/* 
+.search_result {
+  border: 2px solid rgba(2, 5, 51, 0.5);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+}
+
+.company-logo {
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url(./assets/sampleCompanyLogo/applelogo.jpeg);
+  min-height: 150px;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid rgba(2, 5, 51, 0.5);
+}
+
+.search-result-end-button {
+  border: 2px solid rgb(2, 5, 51);
+  border-radius: 10px;
+  margin: 3px;
+  background-color: transparent;
+}
+
+.search_result_job_name {
+  color: rgb(0, 42, 255);
+} */
+
+.form-select {
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+  height: 40px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: grey!important;
+  font-size: 18px;
+}
+
+/* start search item 3 */
+
+.wrapper {
+  /* max-width: 450px;
+  margin: 150px auto; */
+  font-size: 12px !important;
+}
+
+.wrapper .search-input {
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
+
+.search-input input {
+  height: 40px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-input.active input {
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box {
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.search-input.active .autocom-box {
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autocom-box li {
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-input.active .autocom-box li {
+  display: block;
+}
+.autocom-box li:hover {
+  background: #efefef;
+}
+
+.search-input .icon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #644bff;
+  cursor: pointer;
+}
+
+/* end with search item3 */
+
+.search-container {
+  border-radius: 0px 0px 5px 5px;
+  padding: 10px;
+  background-color: rgba(2, 5, 51, 1);
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
+
+.search-result-container {
+  background-color: rgba(2, 5, 51, 0.4);
+  padding: 10px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  /* border: 1px solid red;   */
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
+
+.search-result {
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255) !important;
+  /* border: 1px solid red; */
+  min-height: 100px;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+  margin-bottom: 10px;
+  padding: 10px 15px 10px 15px;
+}
+
+.search-result-company-logo-container {
+  float: left;
+  background-image: url(./assets/sampleCompanyLogo/applelogo.jpeg);
+  height: 100px;
+  width: 100px;
+  min-width: 100px;
+  background-position: center;
+  background-size: cover;
+}
+
+.search-result-job-name-link {
+  text-decoration: none;
+}
+
+.search-result-job-name {
+  color: rgb(14, 26, 193);
+  text-decoration: none;
+  padding-bottom: 3px;
+  /* min-width: 800px; */
+  margin: 0px 0px 0px 0px;
+  border-bottom: 2px solid rgb(2, 5, 51);
+}
+
+.search-result-company-name-and-extra-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-result-company-name-and-extra-icons .extra-icons {
+  padding-left: 65px;
+  padding-right: 5px;
+  font-size: 18px;
+  text-decoration: double;
+}
+
+.search-result-company-name {
+  padding-top: 10px;
+}
+
+.search-result-job-info-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.search-result-left {
+  padding-left: 0px;
+}
+
+.search-result-job-post-time-and-salary {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.search-result-job-post-time-and-salary > h6 {
+  margin: 0px 0px 0px 0px !important;
+}
+.search-result-job-post-time {
+  color: grey;
+  font-size: 8px;
+}
+
+.apply {
+  background-color: rgb(2, 5, 51);
+  text-decoration: double;
+  color: white;
+  padding: 10px;
+  width: 95%;
+  border: 1px solid yellow;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
+
+.apply > span {
+  position: relative;
+  right: -10px;
+}
+.apply:hover {
+  color: yellow;
+  animation: apply-animation 0.5s linear infinite alternate;
+}
+
+@keyframes apply-animation {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(1px, -1px);
+  }
+}
+
+.more-info {
+  text-decoration: double;
+  padding: 10px;
+  width: 95%;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
+
+.more-info:hover {
+  border: 2px solid rgba(2, 5, 51, 0.4);
+  animation: more-info-animation 0.5s linear infinite alternate;
+}
+
+@keyframes more-info-animation {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(-1px, 1px);
+  }
+}
+/* * {
+  border: 1px solid red;
+} */
+
+.search-result-button-container,
+.search-result-skills-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 992px) {
+  .search-result-button-container,
+  .search-result-skills-container {
+    flex-direction: row;
+  }
+  .search-result-skills-container {
+    border-top: 3px solid grey;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    justify-content: center;
+  }
+  .search-result-job-name {
+    border-bottom: none;
+  }
+}
+
+.programming > span {
+  color: white;
+  border-radius: 30px;
+  background-color: rgba(2, 5, 51, 0.6);
+  margin: 1px 10px 10px 1px;
+  padding: 5px 10px 5px 10px;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+  /* border: 1px solid yellow; */
+}
+
+.programming {
+  padding: 5px;
+}
